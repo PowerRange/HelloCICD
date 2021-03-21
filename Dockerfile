@@ -6,7 +6,6 @@ RUN apt-get install –y nginx
 
 CMD ["MV","hello.txt /var/www/;"]
 
-
 EXPOSE 80
 
 CMD ["nginx","-g","daemon off;"]
