@@ -6,5 +6,6 @@ stages :
 dockerbuild : 
    stages: package
    script: 
-      - docker build -t $Dockerfile .
+      - docker build -t nginx-test:1.0.0 .
+      - docker run nginx-test
      
