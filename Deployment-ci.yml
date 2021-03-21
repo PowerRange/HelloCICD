@@ -1,0 +1,10 @@
+image: docker:latest
+
+stages : 
+  - deployment
+  
+dockerbuild : 
+   stages: package
+   script: 
+      - docker build -t $Dockerfile .
+     
