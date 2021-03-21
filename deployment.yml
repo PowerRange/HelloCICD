@@ -9,3 +9,7 @@ dockerbuild :
       - docker build -t nginx-test:1.0.0 .
       - docker run nginx-test
      
+deploy : 
+    stage : deploy
+    image : 
+    script : 
